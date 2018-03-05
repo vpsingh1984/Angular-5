@@ -7,13 +7,14 @@ import { Component } from '@angular/core';
     <input #myInput type="text">
     <button type="button" (click)="logMessage(myInput.value)">Log</button>
     <app-test [parentData]="name"></app-test>
+    <app-employee-list></app-employee-list>
     `,
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'app';
   public name = "Vijay";
-  
+
   logMessage(val) {
     console.log(val);
   }
