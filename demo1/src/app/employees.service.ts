@@ -7,7 +7,6 @@ import { Observable } from 'rxjs/Observable';
 export class EmployeesService {
   private url: string = "/assets/data/employee.json";
 
-
   constructor(private http: HttpClient) { }
 
   getEmployees(): Observable<IEmployee[]>{
